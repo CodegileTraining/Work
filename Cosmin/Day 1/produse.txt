@@ -1,0 +1,6 @@
+1,
+Tricoul alb,alb,
+xl,
+2,
+Tricou mare,
+negru,xxl
