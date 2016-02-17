@@ -1,0 +1,14 @@
+import java.util.Comparator;
+
+public class CustomComparator implements Comparator<Shirt> {
+
+	@Override
+	public int compare(Shirt o1, Shirt o2) {
+		if(o1.getNumber()<o2.getNumber())
+			return -1;
+		if(o2.getNumber()>o2.getNumber())
+			return 1;
+		return 0;
+	}
+
+}
