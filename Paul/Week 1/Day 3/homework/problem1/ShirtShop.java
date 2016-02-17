@@ -18,6 +18,25 @@ public class ShirtShop {
     myDatabase.importShirtsFromFile("shirts.in");
     myDatabase.printReport();
     System.out.println();
+    
+    /*
+    * "shirts.in" contents
+    * format : description, color, size, quantity
+    *
+    * sport time, Blue, S, 15
+    * sport time, Blue, L, 4
+    * sport time, Blue, XXL, 5
+    * easy summer breeze, Black, L, 8
+    * easy summer breeze, Gray, S, 20
+    * easy summer breeze, Gray, XXL, 11
+    * easy summer breeze, Gray, XXL, 4
+    * comfortable wear, Red, XL, 15
+    * comfortable wear, Yellow, XXL, 20
+    * comfortable wear, Black, L, 10
+    * nice casual, Green, L, 10
+    * nice casual, Orange, L, 10
+    * nice casual, Orange, XL, 10
+    */
 
     // Valid
     new Transaction(myDatabase, 10, TransactionType.SALE, 8);
