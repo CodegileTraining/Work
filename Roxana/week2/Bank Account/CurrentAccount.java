@@ -42,9 +42,13 @@ public class CurrentAccount extends Account {
 			if (suma > getAmmountOfMoney()) {
 				throw new Exception("Suma retrasa trebuie sa fie cel mult egata cu suma curenta din cont!");
 			}
-			setAmmountOfMoney(getAmmountOfMoney() - suma);
+
+			if (suma > maxExtract)
+				throw new Exception("Este depasita suma maxima!");
+
 		} catch (Exception e) {
 
+			System.out.println(e.getMessage());
 		}
 
 	}
