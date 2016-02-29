@@ -67,9 +67,7 @@ public class Class {
                         "2.Nothing");
                 i = sc.nextInt();
                 if (i == 1) {
-                    Customer customer = bank.getCustomer(bank.getNumberofCustomers() - 1);
-                    customer.addAccount();
-                    bank.addCustomer(customer, bank.getNumberofCustomers() - 1);
+                    bank.getCustomer(bank.getNumberofCustomers()-1).addAccount();
                 }
                 break;
             case 2:

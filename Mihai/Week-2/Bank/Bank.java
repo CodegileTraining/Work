@@ -17,9 +17,6 @@ public class Bank {
         Customer customer = new Customer(firstName, lastName);
         customers.add(customer);
     }
-    public void addCustomer(Customer customer,int index){
-        customers.add(index,customer);
-    }
 
     private static Bank instantce = new Bank();
 
