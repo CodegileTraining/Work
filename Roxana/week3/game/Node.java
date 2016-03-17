@@ -15,11 +15,10 @@ public class Node {
 		setCost(cost);
 	}
 
-	
 	private void calculateNextNodes() {
 		for (Action a : Action.values()) {
 			State s = state.move(a);
-			
+
 			if (s != null) {
 				nextNodes.add(new Node(s, this, cost + 1));
 			}
@@ -59,7 +58,6 @@ public class Node {
 		this.cost = cost;
 	}
 
-	
 	@Override
 	public int hashCode() {
 		return state.hashCode();

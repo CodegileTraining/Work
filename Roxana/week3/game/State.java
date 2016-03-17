@@ -33,7 +33,7 @@ public class State {
 		return this.equals(Algorithm.finalState);
 	}
 
-	public State cloneSanatate() {
+	public State cloneState() {
 		int[][] aux = new int[n][n];
 		for (int i = 0; i < n; i++) {
 			System.arraycopy(config[i], 0, aux[i], 0, n);
@@ -76,7 +76,7 @@ public class State {
 
 	State moveDown() {
 
-		State s = cloneSanatate();
+		State s = cloneState();
 		int[][] aux = s.config;
 
 		aux[i0][j0] = aux[i0 + 1][j0];
@@ -87,7 +87,7 @@ public class State {
 	}
 
 	private State moveUp() {
-		State s = cloneSanatate();
+		State s = cloneState();
 		int[][] aux = s.config;
 
 		aux[i0][j0] = aux[i0 - 1][j0];
@@ -97,7 +97,7 @@ public class State {
 	}
 
 	private State moveLeft() {
-		State s = cloneSanatate();
+		State s = cloneState();
 		int[][] aux = s.config;
 
 		aux[i0][j0] = aux[i0][j0 - 1];
@@ -107,7 +107,7 @@ public class State {
 	}
 
 	private State moveRight() {
-		State s = cloneSanatate();
+		State s = cloneState();
 		int[][] aux = s.config;
 
 		aux[i0][j0] = aux[i0][j0 + 1];
